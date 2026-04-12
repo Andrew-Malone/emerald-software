@@ -48,21 +48,21 @@
     }
 
     .orb-1 {
-      width: 65vw; height: 65vw;
+      width: 65vmax; height: 65vmax;
       top: -20%; left: -15%;
       background: radial-gradient(circle, #064e3b 0%, transparent 65%);
       opacity: 0.5;
       animation: float1 22s ease-in-out infinite alternate;
     }
     .orb-2 {
-      width: 55vw; height: 55vw;
+      width: 55vmax; height: 55vmax;
       bottom: -15%; right: -12%;
       background: radial-gradient(circle, #0e7490 0%, transparent 65%);
       opacity: 0.4;
       animation: float2 28s ease-in-out infinite alternate;
     }
     .orb-3 {
-      width: 45vw; height: 45vw;
+      width: 45vmax; height: 45vmax;
       top: 35%; left: 45%;
       background: radial-gradient(circle, #10b981 0%, transparent 65%);
       opacity: 0.2;
@@ -212,6 +212,7 @@
       main { padding: 64px 24px 48px; }
       footer { padding: 24px 20px; }
       .dot { display: none; }
+      .addr-part { display: block; }
       .address { line-height: 2.4; }
     }
   </style>
@@ -248,7 +249,7 @@
 
   <footer>
     <p class="address">
-      7901 4th St N<span class="dot">·</span>Suite 300<span class="dot">·</span>St. Petersburg, FL 33702
+      <span class="addr-part">7901 4th St N</span><span class="dot">·</span><span class="addr-part">Suite 300</span><span class="dot">·</span><span class="addr-part">St. Petersburg, FL 33702</span>
     </p>
   </footer>
 
