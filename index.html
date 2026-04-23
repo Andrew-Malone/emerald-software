@@ -614,6 +614,27 @@
       to   { opacity: 1; }
     }
 
+    /* Large monitors: scale up About section */
+    @media (min-width: 1400px) {
+      .team-grid { max-width: 1360px; gap: 32px; }
+      .team-card { padding: 40px 32px; border-radius: 20px; }
+      .photo-frame { width: 180px; height: 180px; margin-bottom: 26px; border-radius: 12px; }
+      .member-name { font-size: 17px; margin-bottom: 16px; }
+      .member-role { font-size: 11px; margin-bottom: 18px; }
+      .member-bio { font-size: 14px; margin-bottom: 22px; }
+      .member-contact a { font-size: 13px; }
+      .about-title { font-size: clamp(36px, 4vw, 56px); }
+      .about-eyebrow { font-size: 12px; }
+      .about-header { margin-bottom: 40px; }
+    }
+
+    @media (min-width: 1800px) {
+      .team-grid { max-width: 1560px; gap: 40px; }
+      .team-card { padding: 48px 36px; }
+      .photo-frame { width: 210px; height: 210px; }
+      .member-bio { font-size: 15px; }
+    }
+
     /* Mobile */
     @media (max-width: 720px) {
       .team-grid { grid-template-columns: 1fr; max-width: 380px; }
@@ -682,7 +703,7 @@
       <div class="team-grid">
         <div class="team-card">
           <div class="photo-frame">
-            <img src="images/Fisher_Wesley.jpg" alt="Wesley Fisher">
+            <img src="images/Fisher_Wesley.webp" alt="Wesley Fisher" width="1200" height="1600" decoding="async">
           </div>
           <p class="member-name">Wesley Fisher</p>
           <p class="member-role">Co-founder</p>
@@ -700,7 +721,7 @@
         </div>
         <div class="team-card">
           <div class="photo-frame">
-            <img src="images/Malone_Andrew.png" alt="Andrew Malone">
+            <img src="images/Malone_Andrew.webp" alt="Andrew Malone" width="1121" height="1403" decoding="async">
           </div>
           <p class="member-name">Andrew Malone</p>
           <p class="member-role">Co-founder</p>
@@ -718,7 +739,7 @@
         </div>
         <div class="team-card">
           <div class="photo-frame">
-            <img src="images/Charlot_Noah.jpg" alt="Noah Charlot">
+            <img src="images/Charlot_Noah.webp" alt="Noah Charlot" width="1968" height="2460" decoding="async">
           </div>
           <p class="member-name">Noah Charlot</p>
           <p class="member-role">Member</p>
